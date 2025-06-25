@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Pago;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -18,3 +19,14 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+// Route::get('prueba', function (){
+//     $pago = new Pago;
+//     $pago->monto = 12.12;
+//     $pago->fecha_pago = "12/12/12";
+//     $pago->metodo_pago = "Efectivo";
+//     $pago->save();
+
+
+//     return $pago;
+// });
