@@ -16,7 +16,7 @@ return new class extends Migration
             $table->decimal('monto', total:10, places:2);
             $table->datetime('fecha_pago');
             $table->string('metodo_pago');
-            $table->text('observaciones');
+            $table->text('observaciones')->nullable();
             $table->unsignedInteger('factura_id');
             $table->timestamps();
         });

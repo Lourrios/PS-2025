@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Cliente;
+use App\Models\Factura;
 use App\Models\Pago;
 use Illuminate\Support\Facades\Route;
 
@@ -21,12 +23,8 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 // Route::get('prueba', function (){
-//     $pago = new Pago;
-//     $pago->monto = 12.12;
-//     $pago->fecha_pago = "12/12/12";
-//     $pago->metodo_pago = "Efectivo";
-//     $pago->save();
+    
+//     $factura = Cliente::find(1)->facturas;
 
-
-//     return $pago;
+//     return $factura;
 // });

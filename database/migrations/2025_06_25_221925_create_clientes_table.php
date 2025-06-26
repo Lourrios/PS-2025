@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('cuil')->unique();
             $table->string('razon_social');
-            $table->string('direccion');
+            $table->string('direccion')->nullable();
             $table->string('email')->unique();
-            $table->string('telefono')->unique();
+            $table->string('telefono')->unique()->nullable();
             $table->string('condicion_iva');
             $table->boolean('activo')->default(true);
             $table->timestamps();
